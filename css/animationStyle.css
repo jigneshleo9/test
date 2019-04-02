@@ -1,0 +1,222 @@
+ @import url('https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700');
+
+ body {
+     font-family: 'Open Sans', sans-serif;
+     font-size: 16px;
+     color: #222;
+     font-weight: 400;
+ }
+
+ section {
+     border: 1px solid #ccc;
+     padding: 0 20px;
+     display: inline-block;
+     vertical-align: middle;
+     width: 25%;
+ }
+
+ h2 {
+     font-size: 24px;
+     color: #222;
+     font-weight: 600;
+ }
+
+ a {
+     background: #ff6e6e;
+     font-size: 14px;
+     text-decoration: none;
+     padding: 10px 20px;
+     margin-bottom: 10px;
+     display: inline-block;
+     vertical-align: middle;
+     color: #fff;
+     transition: 0.2s all ease;
+ }
+
+ a:hover {
+     background: #f94747;
+ }
+
+ /* Loader Starts */
+ .loader-layer {
+     left: 0;
+     position: fixed;
+     top: 0;
+     width: 100%;
+     height: 100%;
+     z-index: 9999;
+     background-color: #011627;
+     opacity: 1;
+     overflow: hidden;
+ }
+
+ .loader-layer_cont {
+     font-size: 26px;
+     font-weight: 600;
+     color: #FFF;
+     position: fixed;
+     top: 50%;
+     left: 50%;
+     transform: translate(-50%, -50%);
+     z-index: 10;
+     opacity: 1;
+ }
+
+ .slideInUp {
+     animation: slideInUp 1s forwards ease-in-out;
+     -webkit-animation: slideInUp 1s forwards ease-in-out;
+ }
+
+ @keyframes slideInUp {
+     0% {
+         top: 0%;
+         width: 100%;
+         height: 0%;
+         z-index: 9999;
+         opacity: 1;
+     }
+
+     100% {
+         top: 0%;
+         width: 100%;
+         height: 100%;
+         z-index: 9999;
+         opacity: 1;
+     }
+ }
+
+ .slideInDown {
+     animation: slideInDown 1s forwards ease-in-out;
+     -webkit-animation: slideInDown 1s forwards ease-in-out;
+ }
+
+ @keyframes slideInDown {
+     0% {
+         top: 100%;
+         width: 100%;
+         height: 0%;
+         z-index: 9999;
+         opacity: 1;
+     }
+
+     100% {
+         top: 0%;
+         width: 100%;
+         height: 100%;
+         z-index: 9999;
+         opacity: 1;
+     }
+ }
+
+ .slideInUp .loader-layer_cont {
+     animation: fadeInCont 1s forwards ease-in-out;
+     -webkit-animation: fadeInCont 1s forwards ease-in-out;
+ }
+
+ .slideInDown .loader-layer_cont {
+     animation: fadeInCont 1s forwards ease-in-out;
+     -webkit-animation: fadeInCont 1s forwards ease-in-out;
+ }
+
+ @keyframes fadeInCont {
+     0% {
+         opacity: 0;
+     }
+
+     70% {
+         opacity: 0;
+     }
+
+     100% {
+         opacity: 1;
+     }
+ }
+
+ .slideOutUp {
+     animation: slideOutUp 1s forwards ease-in-out;
+     -webkit-animation: slideOutUp 1s forwards ease-in-out;
+ }
+
+ @keyframes slideOutUp {
+     0% {
+         top: 0%;
+         width: 100%;
+         height: 100%;
+         z-index: 9999;
+         opacity: 1;
+     }
+
+     99% {
+         top: 0%;
+         width: 100%;
+         height: 0%;
+         z-index: 9999;
+         opacity: 1;
+     }
+
+     100% {
+         top: 0%;
+         width: 0%;
+         height: 0%;
+         z-index: -9999;
+         opacity: 0;
+     }
+ }
+
+ .slideOutDown {
+     animation: slideOutDown 1s forwards ease-in-out;
+     -webkit-animation: slideOutDown 1s forwards ease-in-out;
+ }
+
+ @keyframes slideOutDown {
+     0% {
+         top: 0%;
+         width: 100%;
+         height: 100%;
+         z-index: 9999;
+         opacity: 1;
+     }
+
+     99% {
+         top: 100%;
+         width: 100%;
+         height: 0%;
+         z-index: 9999;
+         opacity: 1;
+     }
+
+     100% {
+         top: 0%;
+         width: 0%;
+         height: 0%;
+         z-index: -9999;
+         opacity: 0;
+     }
+ }
+
+ .slideOutUp .loader-layer_cont {
+     animation: fadeOutCont 1s forwards ease-in-out;
+     -webkit-animation: fadeOutCont 1s forwards ease-in-out;
+ }
+
+ .slideOutDown .loader-layer_cont {
+     animation: fadeOutCont 1s forwards ease-in-out;
+     -webkit-animation: fadeOutCont 1s forwards ease-in-out;
+ }
+
+ @keyframes fadeOutCont {
+     0% {
+         opacity: 1;
+     }
+
+     30% {
+         opacity: 0;
+     }
+
+     100% {
+         opacity: 0;
+     }
+ }
+
+
+ /* Loader Ends */
